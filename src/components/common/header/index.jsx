@@ -3,7 +3,7 @@ import './index.scss';
 import { Link } from 'react-router-dom';
 
 const Header = () => (
-    <div>
+    <>
         <header className="header-container" >
             <ul>
                 <li to='/' ><Link>Inicio</Link></li>
@@ -15,7 +15,7 @@ const Header = () => (
                 <button>Buscar</button>    
             </div>   
         </header> 
-    </div>
+    </>
 );
 
 export default Header;
