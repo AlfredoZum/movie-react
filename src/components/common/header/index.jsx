@@ -6,9 +6,9 @@ const Header = () => (
     <>
         <header className="header-container" >
             <ul>
-                <li to='/' ><Link>Inicio</Link></li>
-                <li to='/movie'><Link>Películas</Link></li>
-                <li to='/movie/create'><Link>Crear Película</Link></li>
+                <li><Link to='/'>Inicio</Link></li>
+                <li><Link to='/movie'>Películas</Link></li>
+                <li><Link to='/movie/create'>Crear Película</Link></li>
             </ul> 
             <div className="search-container" >
                 <input type="text" name="search" placeholder="Buscar pelicula" />

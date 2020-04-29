@@ -8,13 +8,15 @@ import { Header, Footer } from './components/common/index';
 const App = () => {
 
   return (
-    <div className="main-container" >
+    
       <BrowserRouter>
         <Header/>
-        <Routes />
+        <div className="main-container" >
+          <Routes />
+        </div>
         <Footer/>
       </BrowserRouter>
-    </div>
+    
     
   );
 
