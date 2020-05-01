@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import { getMovies } from '../../../services/index';
-import moment from 'moment';
-import { Link } from 'react-router-dom';
 import './index.scss';
+import moment from 'moment';
 
 export default class MoviesList extends Component {
 
@@ -66,12 +65,9 @@ const ListComponent = ( props ) => (
         {
             props.movies.length > 0 ? 
                 props.movies.map( (movie) => (
-                    <Link className="link-movie-detail" to={`/peliculas/${movie['_id']}`} >
-                        <MovieCard 
-                            movie = { movie }
-                        />
-                    </Link>
-                    
+                    <MovieCard 
+                        movie = { movie }
+                    />
             ))
             : <p>No se encontro ninguna pelicula</p>
         }
