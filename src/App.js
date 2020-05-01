@@ -1,7 +1,9 @@
 import React from 'react';
 
 import './App.scss';
-import { BrowserRouter } from 'react-router-dom'
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { BrowserRouter } from 'react-router-dom';
 import Routes from './routes/index';
 import { Header, Footer } from './components/common/index';
 
@@ -15,6 +17,7 @@ const App = () => {
           <Routes />
         </div>
         <Footer/>
+        <ToastContainer />
       </BrowserRouter>
     
     
